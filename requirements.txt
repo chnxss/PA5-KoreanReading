@@ -1,3 +1,2 @@
 openai
 bs4
-BeautifulSoup
