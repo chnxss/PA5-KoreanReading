@@ -16,7 +16,7 @@ prompt = """Act as an AI reading learning-assistant in Korean. You will receive 
             - "vocab" - the Korean vocab
             - "meaning" - the meaning of the vocab in English
             - "part of speech" - the part of speech of the vocab
-            - "example" - an example of the vocab used in a sentence. The example must not include '' or "".
+            - "example" - an example of the vocab used in a sentence and sentence translation, for example; This is Korean sentence. (This is translation in English.) The example must not include '' or "".
             Don't say anything at first. Wait for the user to say something.
         """
 st.title('Korean reading assistant')
