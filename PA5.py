@@ -49,7 +49,7 @@ if st.button('Submit'):
     st.write(summary)
     find_vocab = re.findall(r'{"vocab":.*}',answer)
     vocab = ','.join(find_vocab)
-    vocab = '[' + vocab + ']'
-    sd = json.loads(vocab)
+    vocab_jsonstr = '[' + vocab + ']'
+    sd = json.loads(vocab_jsonstr)
     answer_df = pd.DataFrame.from_dict(sd)
     st.table(answer_df)
