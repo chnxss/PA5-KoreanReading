@@ -20,10 +20,10 @@ prompt = """Act as an AI reading learning-assistant in Korean. You will receive 
             Don't say anything at first. Wait for the user to say something.
         """
 st.title('Korean reading assistant')
-st.markdown('Input the url of news from news.naver.com. \n\
-            The AI will give you summary and interesting vocabs from the news.')
+st.markdown('Input the url of news from n.news.naver.com. \n\
+            The AI will give you summary and interesting vocabs.')
 
-user_input = st.text_area("Enter news url from naver.com:", "Your url here")
+user_input = st.text_area("Enter news url from naver.com:", "https://n.news.naver.com/mnews/article/022/0003883593?sid=102")
 
 if st.button('Submit'):
     news_info = requests.get(user_input)
